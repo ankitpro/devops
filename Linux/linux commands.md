@@ -384,6 +384,38 @@ root@308a62877e19:~# ls -d /etc/*.conf
 /etc/deluser.conf          /etc/ld.so.conf    /etc/pam.conf       /etc/xattr.conf
 root@308a62877e19:~#
 ```
+The * character represents “zero or more characters in a filename.” So, you are asking to see files in the /etc directory that begin with “zero or more characters, followed by .conf.” Using the * character, you can copy these files into a directory under your home directory (don’t worry if you get an error message for some of the files):
+```
+root@308a62877e19:~# ls
+hosts  test1  test2
+root@308a62877e19:~# mkdir config
+root@308a62877e19:~# cp /etc/*.conf config/
+root@308a62877e19:~# ls config/
+adduser.conf          debconf.conf  e2scrub.conf  host.conf   libaudit.conf  nsswitch.conf  resolv.conf  ucf.conf
+ca-certificates.conf  deluser.conf  gai.conf      ld.so.conf  mke2fs.conf    pam.conf       sysctl.conf  xattr.conf
+root@308a62877e19:~#
+```
+Use the ? character to represent a single character. So, to display any files in the /etc directory that have filenames that are exactly four characters in length, execute the following command:
+```
+root@308a62877e19:~# ls -d /etc/????
+/etc/dhcp  /etc/dpkg  /etc/ldap  /etc/mtab  /etc/perl  /etc/skel
+root@308a62877e19:~#
+```
+The ? character will match any single character. If you want to match a specific character, you can use a set of square brackets, []. For example, to match a file in the /etc directory that begins with an a, b, or c character, execute the following command:
+```
+root@308a62877e19:~# ls -d /etc/[abc]*
+/etc/adduser.conf  /etc/apparmor.d         /etc/bindresvport.blacklist  /etc/calendar
+/etc/aliases       /etc/apt                /etc/binfmt.d                /etc/cron.d
+/etc/aliases.db    /etc/bash.bashrc        /etc/ca-certificates         /etc/cron.daily
+/etc/alternatives  /etc/bash_completion.d  /etc/ca-certificates.conf    /etc/cron.weekly
+root@308a62877e19:~#
+```
+> **Using a Range in [ ]** </br>
+Note that [abc] is the same as [a-c]. Using a - enables you to specify a range of permitted
+characters. Just be sure it is a valid range according to the ASCII text table. You can view this
+table by executing the command man ascii.
+
+
 
 
 
