@@ -10,8 +10,8 @@
 - [What is Linux?](#what-is-linux)
 - [Basic Commands](#basic-commands)
 - [Introduction To Linux](#introduction-to-linux) </br>
-      - [Command-Line Structure](#command-line-structure)
-      - [Man Page Categories](Man-Page-Categories)
+      - [Command-Line Structure](#command-line-structure)</br>
+      - [Man Page Categories](Man-Page-Categories)</br>
       - [Info Documentation](Info-Documentation)
 
 
