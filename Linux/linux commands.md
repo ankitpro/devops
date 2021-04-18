@@ -228,7 +228,7 @@ Let me explain one output with an example:
 ```
 drwxr-xr-x 2 root root 4096 Apr 18 10:23 .vim
 ```
-* \rwxr-xr-x : File type(d - Directory)</br>
+* d : File type(d - Directory)</br>
 * rwxr-xr-x : Permissions</br>
 * 2 : Hard Link Count</br>
 * root: User Owner </br>
