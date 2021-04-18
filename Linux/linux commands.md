@@ -131,6 +131,15 @@ In addition to man pages, you might find info documentation helpful. Not all com
 display; for example, info ls.
 The documentation found in info pages tends to be more verbose than in man pages. The sections of info pages are also organized differently than man pages. Instead of one long document of text, info pages appear in hyperlinked sections. For example, if you scroll down the document for the ls command (use the down-arrow key on your keyboard), you see this:
 ```
-Output:
-   Exit status:                                                                                                                                                                                                                                  0 success                                                                                                             1 minor problems  (e.g., failure to access a file or directory not                                                      specified as a command line argument.  This happens when listing a                                                    directory in which entries are actively being removed or renamed.)                                                  2 serious trouble (e.g., memory exhausted, invalid option, failure                                                      to access a file or directory specified as a command line argument                                                    or a directory loop)                                                                                                                                                                                                                    Also see *note Common options::.                                                                                                                                                                                                         * Menu:                                                                                                                                                                                                                                     * Which files are listed::                                                                                            * What information is listed::                                                                                        * Sorting the output::                                                                                                * Details about version sort::                                                                                        * General output formatting::                                                                                         * Formatting file timestamps::                                                                                        * Formatting the file names::                                                                     
+#info ls
+```
+```
+* Menu:
+* Which files are listed::
+* What information is listed::
+* Sorting the output::
+* Details about version sort::
+* General output formatting::
+* Formatting file timestamps::
+* Formatting the file names::
 ```
