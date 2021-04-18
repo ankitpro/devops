@@ -228,9 +228,9 @@ Let me explain one output with an example:
 ```
 -rw-r--r-- 1 root root 3106 Dec  5  2019 .bashrc
 ```
--rw-r--r--
 '- : File type</br>
-rw-r--r-- : Permissions
+rw-r--r-- : Permissions</br>
+1 : Hard Link Count</br>
 
 
 
