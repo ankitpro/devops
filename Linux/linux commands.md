@@ -16,7 +16,8 @@
 5. [The Filesystem](#the-filesystem)
       * [Understanding the Filesystem](#understanding-the-filesystem)
       * [Learning the Most Used Directories](#learning-the-most-used-directories)
-6. [Navigating the Filesystem]()
+      * [Navigating the Filesystem]()
+      * [Managing the Filesystem]()
 
 
 
@@ -182,3 +183,20 @@ When you first open a shell, you are automatically placed in your home directory
 A path or pathname is how you refer to a file or directory in the directory structure. The two types of pathnames are
 * **Absolute**—A path that always starts from the root directory; for example, **/home/bob/sample.txt**
 * **Relative**—A path that starts from the current directory; for example, if you are in the **/home** directory and want to access the sample.txt file that is under the bob directory (which is under the **/home** directory), you use **bob/sample.txt.**
+
+```
+root@308a62877e19:~# pwd
+/root
+root@308a62877e19:~# cd /usr/bin/
+root@308a62877e19:/usr/bin# pwd
+/usr/bin
+```
+Note that the prompt (root@308a62877e19:/usr/bin) indicates the current directory, so the pwd command isn’t always necessary. This isn’t always the case because the prompt is customizable.
+
+## Managing the Filesystem
+Now that you know how to move from one directory to another, you will want to see what is inside the directories. The ls command lists files in a directory:
+```
+root@308a62877e19:~# cd /tmp/
+root@308a62877e19:/tmp# ls
+fileHejJv3  filexREe4x  script.deb.sh  test
+```
