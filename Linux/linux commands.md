@@ -226,16 +226,16 @@ drwxr-xr-x 2 root root 4096 Apr 18 10:23 .vim
 When you use the -l option, each line describes detailed information for a file.
 Let me explain one output with an example:
 ```
--rw-r--r-- 1 root root 3106 Dec  5  2019 .bashrc
+drwxr-xr-x 2 root root 4096 Apr 18 10:23 .vim
 ```
-* \- : File type</br>
-* rw-r--r-- : Permissions</br>
-* 1 : Hard Link Count</br>
+* \rwxr-xr-x : File type(d - Directory)</br>
+* rwxr-xr-x : Permissions</br>
+* 2 : Hard Link Count</br>
 * root: User Owner </br>
 * root: Group Owner </br>
-* 3106: File size</br>
-* Dec  5  2019: Modification Time Stamp
-* .bashrc: File Name
+* 4096: File size</br>
+* Apr 18 10:23: Modification Time Stamp
+* .vim: File Name
 
 
 
