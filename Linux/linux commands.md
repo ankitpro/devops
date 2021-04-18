@@ -70,6 +70,6 @@ filename1 : Filename of the file which you wanna copy. [Argument]
 filename2 : Filename of the file where you wanna copy. [Argument]
 </br>
 
-```
+```bash
 # cp -r ./fileHejJv3 ./test
 ```
