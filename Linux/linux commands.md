@@ -12,7 +12,7 @@
 - [Introduction To Linux](#introduction-to-linux) </br>
       - [Command-Line Structure](#command-line-structure)
 - [Man Page Categories](Man-Page-Categories)
-
+- [Info Documentation](Info-Documentation)
 
 
 
@@ -118,3 +118,19 @@ DESCRIPTION
        9   Kernel routines [Non standard]
 ```
 Rest of the output is skipped.
+
+In most cases, you don’t have to worry much about these categories. When you execute the man command, it first searches category 1 for the man page. If it doesn’t find it, it then searches the next category.11 Eventually it finds and displays the man page or displays an error if it can’t find the man page in any category:
+```
+# man nope
+No manual entry for nope
+```
+In some cases you must specify the category. For example, there is a user command named passwd (category 1) and a file format named passwd (category 5). If you execute the man passwd command, the passwd command man page displays. To view the man page for the passwd file, you must execute the man 5 passwd command.
+
+### Info Documentation
+In addition to man pages, you might find info documentation helpful. Not all commands and files have info documentation, but for those that do, using it can be easier than using man pages. To use an info document, execute the info command followed by the command to
+display; for example, info ls.
+The documentation found in info pages tends to be more verbose than in man pages. The sections of info pages are also organized differently than man pages. Instead of one long document of text, info pages appear in hyperlinked sections. For example, if you scroll down the document for the ls command (use the down-arrow key on your keyboard), you see this:
+```
+Output:
+   Exit status:                                                                                                                                                                                                                                  0 success                                                                                                             1 minor problems  (e.g., failure to access a file or directory not                                                      specified as a command line argument.  This happens when listing a                                                    directory in which entries are actively being removed or renamed.)                                                  2 serious trouble (e.g., memory exhausted, invalid option, failure                                                      to access a file or directory specified as a command line argument                                                    or a directory loop)                                                                                                                                                                                                                    Also see *note Common options::.                                                                                                                                                                                                         * Menu:                                                                                                                                                                                                                                     * Which files are listed::                                                                                            * What information is listed::                                                                                        * Sorting the output::                                                                                                * Details about version sort::                                                                                        * General output formatting::                                                                                         * Formatting file timestamps::                                                                                        * Formatting the file names::                                                                     
+```
