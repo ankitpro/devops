@@ -231,6 +231,11 @@ Let me explain one output with an example:
 * \- : File type</br>
 * rw-r--r-- : Permissions</br>
 * 1 : Hard Link Count</br>
+* root: User Owner </br>
+* root: Group Owner </br>
+* 3106: File size</br>
+* Dec  5  2019: Modification Time Stamp
+* .bashrc: File Name
 
 
 
