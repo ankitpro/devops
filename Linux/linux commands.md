@@ -12,9 +12,6 @@
 - [Introduction To Linux](#introduction-to-linux) </br>
       - [Command-Line Structure](#command-line-structure)
       - [Command-Line Structure](#command-line-structure)
-      - Command-Line Structure(#command-line-structure)
-- cat1 </br>
-      - sub cat1
 - [Man Page Categories](Man-Page-Categories)
 
 
