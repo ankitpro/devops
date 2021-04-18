@@ -9,7 +9,7 @@
 - [About Linux](#about-linux)
 - [What is Linux?](#what-is-linux)
 - [Basic Commands](#basic-commands)
-- [Introduction To Linux](#introduction-to-linux)
+- [Introduction To Linux](#introduction-to-linux) </br>
       - [Command-Line Structure](#command-line-structure)
       - [Command-Line Structure](#command-line-structure)
       - [Command-Line Structure](#command-line-structure)
