@@ -21,6 +21,7 @@
       * [Managing Directories](#Managing-Directories)
       * [Managing Files](#managing-files)
       * [Wildcards](#wildcards)
+      * [Redirection](#Redirection)
 
 
 
@@ -414,8 +415,27 @@ Note that [abc] is the same as [a-c]. Using a - enables you to specify a range o
 characters. Just be sure it is a valid range according to the ASCII text table. You can view this
 table by executing the command man ascii.
 
+## Redirection
+Suppose you run a command and you decide that you want to store the output of the command into a file for future use. In a situation like this, you can use a process called redirection. The idea is to redirect the output of a command into a file or another process. You can also redirect the input to a command from a file.
 
+Each command has three data streams:
+* **Standard input (stdin)**—The data that is sent into the command. This is not an argument but rather additional information that is being sent into a command. Typically, this data comes from a user who is executing the command. The user provides this data via the keyboard. This input could be redirected from a file or another process.
+* **Standard output (stdout)**—The data that is sent from the command when all goes well. Typically, this appears on the screen, but it can be sent to a file or to another command.
+* **Standard error (stderr)**—The data that is sent from the command when an error occurs. Typically, this appears on the screen, but it can be sent to a file or to another command.
 
-
+To redirect stdout, use the > character after the command:
+```
+root@308a62877e19:~# cal 01 1994 > mycal
+root@308a62877e19:~# cat mycal
+    January 1994
+Su Mo Tu We Th Fr Sa
+                   1
+ 2  3  4  5  6  7  8
+ 9 10 11 12 13 14 15
+16 17 18 19 20 21 22
+23 24 25 26 27 28 29
+30 31
+root@308a62877e19:~#
+```
 
 
