@@ -9,10 +9,10 @@
 1. [About Linux](#about-linux)
 2. [What is Linux?](#what-is-linux)
 3. [Basic Commands](#basic-commands)
-4. [Introduction To Linux](#introduction-to-linux) </br>
-      * [Command-Line Structure](#command-line-structure)</br>
-      * [Man Page Categories](Man-Page-Categories)</br>
-      - [Info Documentation](Info-Documentation)
+4. [Introduction To Linux](#introduction-to-linux)
+      * [Command-Line Structure](#command-line-structure)
+      * [Man Page Categories](Man-Page-Categories)
+      * [Info Documentation](Info-Documentation)
 
 
 
