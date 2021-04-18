@@ -19,6 +19,9 @@
       * [Navigating the Filesystem](#navigating-the-filesystem)
       * [Managing the Filesystem](#managing-the-filesystem)
       * [Managing Directories](#Managing-Directories)
+      * [Managing Files](#managing-files)
+      * [Wildcards]
+      * []
 
 
 
@@ -329,6 +332,59 @@ root@308a62877e19:~# ls test1
 file3.html
 root@308a62877e19:~#
 ```
+
+## Managing Files
+To copy a file, use the cp command. You should have two arguments: what file to copy and where to copy it:
+```
+root@308a62877e19:~# ls
+test1  test2
+root@308a62877e19:~# cp /etc/hosts .
+root@308a62877e19:~# ls
+hosts  test1  test2
+root@308a62877e19:~#
+```
+Recall that . represents the current directory.
+
+Be careful when using the cp command because you can accidentally overwrite an existing file. This happens when the destination (where to copy the file) contains a file with the exact same name as an existing file:
+```
+root@308a62877e19:~# ls -l hosts
+-rw-r--r-- 1 root root 174 Apr 18 14:03 hosts
+root@308a62877e19:~# cp /etc/passwd hosts
+root@308a62877e19:~# ls -l hosts
+-rw-r--r-- 1 root root 1335 Apr 18 14:05 hosts
+root@308a62877e19:~#
+```
+You can tell that the original file was overwritten because the file size changed (174 bytes to 1335 bytes) and the modification timestamp changed. To avoid overwriting an existing file, use the -i option:
+```
+root@308a62877e19:~# ls -l hosts
+-rw-r--r-- 1 root root 1335 Apr 18 14:05 hosts
+root@308a62877e19:~# cp -i /etc/passwd hosts
+cp: overwrite 'hosts'? n
+root@308a62877e19:~# ls -l hosts
+-rw-r--r-- 1 root root 1335 Apr 18 14:05 hosts
+root@308a62877e19:~#
+```
+> Tip: </br>
+The rm-ri command is the same as the rm -ir command, which is the same as the rm -r -i command. In most cases, single character options can be combined and order doesn’t matter.
+
+The -i option stands for “interactive” mode and prompts you if the cp command will end up overwriting an existing file.
+Some additional useful commands to manage files include the following:
+* **mv**—Used to move files or directories
+* **rm**—Used to delete files
+* **touch**—Creates an empty file or updates the modification timestamp of an existing file
+
+## Wildcards
+Suppose you want to copy all the files that end in .conf from the /etc directory to a directory called config in your home directory. You look in the /etc directory and realize that there are about 20 of these files. You don’t want to have to type in the name of each file. This is a case in which you want to use wildcards.
+With wildcards, you can make use of special characters to match file or directory names. For example, you can list all the files in the /etc directory that end in .conf by executing the following command:
+```
+root@308a62877e19:~# ls -d /etc/*.conf
+/etc/adduser.conf          /etc/e2scrub.conf  /etc/libaudit.conf  /etc/resolv.conf
+/etc/ca-certificates.conf  /etc/gai.conf      /etc/mke2fs.conf    /etc/sysctl.conf
+/etc/debconf.conf          /etc/host.conf     /etc/nsswitch.conf  /etc/ucf.conf
+/etc/deluser.conf          /etc/ld.so.conf    /etc/pam.conf       /etc/xattr.conf
+root@308a62877e19:~#
+```
+
 
 
 
