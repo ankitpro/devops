@@ -196,7 +196,42 @@ Note that the prompt (root@308a62877e19:/usr/bin) indicates the current director
 ## Managing the Filesystem
 Now that you know how to move from one directory to another, you will want to see what is inside the directories. The ls command lists files in a directory:
 ```
-root@308a62877e19:~# cd /tmp/
-root@308a62877e19:/tmp# ls
-fileHejJv3  filexREe4x  script.deb.sh  test
+root@308a62877e19:~# cd ~
+root@308a62877e19:~# ls
+test
 ```
+By default the ls command displays all files in the current directory except hidden files. A hidden file has a . character at the beginning of the filename. To see all files, including hidden files, use the -a option to the ls command:
+```
+root@308a62877e19:~# ls -a
+.  ..  .bash_history  .bashrc  .config  .lesshst  .profile  .vim  .viminfo  test
+```
+. represents the current directory and .. represents the directory above the current directories. You will always see these two hidden files regardless of which directory you are in.
+Each of the hidden files (in some cases they are directories) that you see in this output contain information that modifies the user’s environment. For example, .bashrc and .profile modify how the BASH shell works for the current user.
+How could you tell if .bashrc was a file or .mozilla was a directory? Use the -l option:
+
+```
+root@308a62877e19:~# ls -a -l ~
+total 40
+drwx------ 1 root root 4096 Apr 18 13:24 .
+drwxr-xr-x 1 root root 4096 Apr 18 09:50 ..
+-rw------- 1 root root  707 Apr 18 10:15 .bash_history
+-rw-r--r-- 1 root root 3106 Dec  5  2019 .bashrc
+drwx------ 3 root root 4096 Apr 18 10:24 .config
+-rw------- 1 root root   42 Apr 18 11:29 .lesshst
+-rw-r--r-- 1 root root  161 Dec  5  2019 .profile
+drwxr-xr-x 2 root root 4096 Apr 18 10:23 .vim
+-rw------- 1 root root 6924 Apr 18 10:23 .viminfo
+-rw-r--r-- 1 root root    0 Apr 18 13:24 test
+```
+When you use the -l option, each line describes detailed information for a file.
+Let me explain one output with an example:
+```
+-rw-r--r-- 1 root root 3106 Dec  5  2019 .bashrc
+```
+-rw-r--r--
+- -> File type
+rw-r--r-- -> Permissions
+
+
+
+
