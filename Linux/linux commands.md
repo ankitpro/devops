@@ -13,7 +13,7 @@
       - [Command-Line Structure](#command-line-structure)
       - [Command-Line Structure](#command-line-structure)
       - [Command-Line Structure](#command-line-structure)
-- cat1
+- cat1 </br>
       - sub cat1
 - [Man Page Categories](Man-Page-Categories)
 
