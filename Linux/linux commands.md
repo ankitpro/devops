@@ -60,10 +60,15 @@ whereas others support the double-hyphen method (and some support both methods).
 This information could be things like a filename, user name, or host name.
 </br>
 Command: cp -r <filename1> <filename2>
+</br>
 cp : copy [Command]
+</br>
 -r : recursive [Option]
+</br>
 <filename1> : Filename of the file which you wanna copy. [Argument]
+</br>
 <filename2> : Filename of the file where you wanna copy. [Argument]
+</br>
 ```
 # cp -r ./fileHejJv3 ./test
 ```
