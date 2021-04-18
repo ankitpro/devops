@@ -65,9 +65,9 @@ cp : copy [Command]
 </br>
 -r : recursive [Option]
 </br>
-'<filename1>' : Filename of the file which you wanna copy. [Argument]
+filename1 : Filename of the file which you wanna copy. [Argument]
 </br>
-<filename2> : Filename of the file where you wanna copy. [Argument]
+filename2 : Filename of the file where you wanna copy. [Argument]
 </br>
 
 ```
