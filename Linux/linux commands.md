@@ -9,8 +9,8 @@
 - [About Linux](#about-linux)
 - [What is Linux?](#what-is-linux)
 - [Basic Commands](#basic-commands)
-* [Introduction To Linux](#introduction-to-linux)
-      * [Command-Line Structure](#command-line-structure)
+- [Introduction To Linux](#introduction-to-linux)
+      [Command-Line Structure](#command-line-structure)
 - [Man Page Categories](Man-Page-Categories)
 
 
