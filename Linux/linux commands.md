@@ -15,6 +15,7 @@
       * [Info Documentation](#info-documentation)
 5. [The Filesystem](#the-filesystem)
       * [Understanding the Filesystem](#understanding-the-filesystem)
+      * [Learning the Most Used Directories](#learning-the-most-used-directories)
 
 
 
@@ -156,9 +157,9 @@ You can learn a lot from info documentation. Try executing the info command with
 
 # The Filesystem
 ## Understanding the Filesystem
-Typically, new Linux users have some experience in another operating system, such as Microsoft Windows. One of the challenges of using the Linux filesystem is understanding that the layout is likely to be different than what you are used to.
-For example, in Microsoft Windows, physical drives are assigned letters, such as C: or F:. They may be visible under the My Computer icon. Linux doesn’t use drive letters or a My Computer icon. Instead, all drives, including network drives and removable media, are located under the root directory.
-The root directory is symbolized by the / character. This character is also used to separate directory and filenames in a path. Think of the path as directions to get to a file or directory.
+Typically, new Linux users have some experience in another operating system, such as Microsoft Windows. One of the challenges of using the Linux filesystem is understanding that the layout is likely to be different than what you are used to.</br>
+For example, in Microsoft Windows, physical drives are assigned letters, such as C: or F:. They may be visible under the My Computer icon. Linux doesn’t use drive letters or a My Computer icon. Instead, all drives, including network drives and removable media, are located under the root directory.</br>
+The root directory is symbolized by the / character. This character is also used to separate directory and filenames in a path. Think of the path as directions to get to a file or directory.</br>
 For example, the path /home/bob/sample.txt refers to a file named sample.txt that is in the bob directory. The bob directory is under the home directory, which in turn is under the root directory. See Figure 3.1 for a small example of a Linux filesystem.
 
 ## Learning the Most Used Directories
