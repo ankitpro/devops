@@ -145,6 +145,9 @@ The documentation found in info pages tends to be more verbose than in man pages
 ```
 This is a menu of subcategories you can jump to by placing your cursor on a menu item and pressing the Enter key. After you’re in a subcategory, type the letter u to go back up one level.
 To see additional commands, press the H or ? key.
+
 > NOTE:</br>
-In the help section, press l to exit help and return to the info page. Use q to quit the info
-document and return to the command line.
+In the help section, press l to exit help and return to the info page. Use q to quit the info document and return to the command line.
+
+> Tip: </br>
+You can learn a lot from info documentation. Try executing the info command with no arguments. Then scroll down to the menu section, pick a category, press the Enter key, and start exploring.
