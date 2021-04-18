@@ -13,6 +13,8 @@
       * [Command-Line Structure](#command-line-structure)
       * [Man Page Categories](#man-page-categories)
       * [Info Documentation](#info-documentation)
+5. [The Filesystem](#the-filesystem)
+      * [Understanding the Filesystem](#understanding-the-filesystem)
 
 
 
@@ -151,3 +153,23 @@ In the help section, press l to exit help and return to the info page. Use q to 
 
 > Tip: </br>
 You can learn a lot from info documentation. Try executing the info command with no arguments. Then scroll down to the menu section, pick a category, press the Enter key, and start exploring.
+
+# The Filesystem
+## Understanding the Filesystem
+Typically, new Linux users have some experience in another operating system, such as Microsoft Windows. One of the challenges of using the Linux filesystem is understanding that the layout is likely to be different than what you are used to.
+For example, in Microsoft Windows, physical drives are assigned letters, such as C: or F:. They may be visible under the My Computer icon. Linux doesn’t use drive letters or a My Computer icon. Instead, all drives, including network drives and removable media, are located under the root directory.
+The root directory is symbolized by the / character. This character is also used to separate directory and filenames in a path. Think of the path as directions to get to a file or directory.
+For example, the path /home/bob/sample.txt refers to a file named sample.txt that is in the bob directory. The bob directory is under the home directory, which in turn is under the root directory. See Figure 3.1 for a small example of a Linux filesystem.
+
+## Learning the Most Used Directories
+Thousands of directories are in a typical Linux filesystem. You should not worry about learning
+about all of these directories when you first start learning Linux, but some are important
+enough to learn now:
+* /home—A user’s home directory; each user has a directory under the /home directory where she can store her files. This is one of the few places where the user should always have the right to create and manage files.
+* /root—Root user’s home directory; the system administrator account on the system is called the root user. The home directory for the root user isn’t under the /home directory; instead it is under the /root directory.
+* /bin—Executables (programs); most of the commands you execute as a regular user are placed here or in the /usr/bin directory.
+* /usr/bin—Executables (programs); most of the commands you execute as a regular user are placed here or in the /bin directory.
+* /sbin—Executables (programs) for system administrators; most of the commands you execute as a system administrator are placed here or in the /usr/sbin directory.
+* /usr/sbin—Executables (programs) for system administrators; most of the commands you execute as a system administrators are placed here or in the /sbin directory.
+* /media—Removable media (could also be /run/media); this is where you find the files for removable devices, such as CD-ROMs and USB drives.
+* /tmp—Temporary files; typically, programs store files in this directory rather than placing files in a user’s home directory.
