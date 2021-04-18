@@ -58,3 +58,11 @@ depends on the command because some commands support the single-hyphen method
 whereas others support the double-hyphen method (and some support both methods).
 - **Arguments**:Arguments are used to provide additional information to the command.
 This information could be things like a filename, user name, or host name.
+Command: cp -r <filename1> <filename2>
+cp : copy [Command]
+-r : recursive [Option]
+<filename1> : Filename of the file which you wanna copy. [Argument]
+<filename2> : Filename of the file where you wanna copy. [Argument]
+```
+# cp -r ./fileHejJv3 ./test
+```
