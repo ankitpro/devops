@@ -228,14 +228,14 @@ Let me explain one output with an example:
 ```
 drwxr-xr-x 2 root root 4096 Apr 18 10:23 .vim
 ```
-* d : File type(d - Directory)</br>
-* rwxr-xr-x : Permissions</br>
-* 2 : Hard Link Count</br>
-* root: User Owner </br>
-* root: Group Owner </br>
-* 4096: File size</br>
-* Apr 18 10:23: Modification Time Stamp
-* .vim: File Name
+* **d** : File type(d - Directory)</br>
+* **rwxr-xr-x** : Permissions</br>
+* **2** : Hard Link Count</br>
+* **root**: User Owner </br>
+* **root**: Group Owner </br>
+* **4096**: File size</br>
+* **Apr 18 10:23**: Modification Time Stamp
+* **.vim**: File Name
 
 
 
