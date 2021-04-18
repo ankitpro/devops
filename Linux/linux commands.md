@@ -48,13 +48,13 @@ To find a file with an extension ".py" use the below command:
 ## Introduction to Linux
 ### Command-Line Structure
 A command has three components:
-* **Command name—** This is just the name of the command.
-* **Option(s)—**An option (also referred to as a flag) is a predefined value that changes the
+- **Command name—** This is just the name of the command.
+- **Option(s)—**An option (also referred to as a flag) is a predefined value that changes the
 behavior of the command. The format of options can vary. In some cases, the option
 begins with a single hyphen followed by a single character; for example: ls -a. In other
 cases, the option begins with two hyphens followed by a word; for example: ls --all.
 In some rare cases, the option is just a single character with no hyphen. The format
 depends on the command because some commands support the single-hyphen method
 whereas others support the double-hyphen method (and some support both methods).
-* **Arguments—**Arguments are used to provide additional information to the command.
+- **Arguments—**Arguments are used to provide additional information to the command.
 This information could be things like a filename, user name, or host name.
