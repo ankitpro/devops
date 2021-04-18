@@ -40,9 +40,9 @@ The Linux operating system comprises several different pieces:
 
 ## Basic Commands
 To find a file with an extension ".py" use the below command:
-```bash
-      find . -name '*.py' | xargs grep some_function
-      cat hosts | xargs -I{} ssh root@{} hostname
+```powershell
+# find . -name '*.py' | xargs grep some_function
+# cat hosts | xargs -I{} ssh root@{} hostname
 ```
 
 ## Introduction to Linux
