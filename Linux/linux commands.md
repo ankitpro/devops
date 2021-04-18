@@ -18,6 +18,7 @@
       * [Learning the Most Used Directories](#learning-the-most-used-directories)
       * [Navigating the Filesystem](#navigating-the-filesystem)
       * [Managing the Filesystem](#managing-the-filesystem)
+      * [Managing Directories](#Managing-Directories)
 
 
 
@@ -246,5 +247,63 @@ The details of the information provided by the ls -l command:
 * **File size**—The size of the file in bytes.
 * **Modification timestamp**—The date and time the file was last modified.
 * **Filename**—The name of the file.
+
+## Managing Directories
+To create a new directory, use the mkdir command:
+```
+root@308a62877e19:~# ls
+test
+root@308a62877e19:~# mkdir data
+root@308a62877e19:~# ls -l
+total 4
+drwxr-xr-x 2 root root 4096 Apr 18 13:51 data
+-rw-r--r-- 1 root root    0 Apr 18 13:24 test
+```
+Note a situation in which this could fail:
+```
+root@308a62877e19:~# ls
+data
+root@308a62877e19:~# mkdir test/samples
+mkdir: cannot create directory 'test/samples': No such file or directory
+```
+This failure occurs because to make the samples directory in the test directory, the test directory must exist. To make both the samples and test directory, use the -p option to the mkdir command:
+```
+root@308a62877e19:~# ls
+data
+root@308a62877e19:~# mkdir -p test/samples
+root@308a62877e19:~# ls
+data  test
+root@308a62877e19:~# ls test/
+samples
+```
+To delete a directory that is empty, use the rmdir command:
+```
+root@308a62877e19:~# ls
+data  test
+root@308a62877e19:~# rmdir data/
+root@308a62877e19:~# ls
+test
+```
+The rmdir command only works on empty directories:
+```
+root@308a62877e19:~# ls
+test
+root@308a62877e19:~# rmdir test
+rmdir: failed to remove 'test': Directory not empty
+```
+To delete an entire directory structure, including all the files and subdirectories, use the rm command with the -r option:
+```
+root@308a62877e19:~# ls
+test
+root@308a62877e19:~# rm -r test
+root@308a62877e19:~# ls
+root@308a62877e19:~#
+```
+> Note: </br>
+The rm command is normally used to delete files. With the -r option, it can delete
+directories and files.
+
+
+
 
 
