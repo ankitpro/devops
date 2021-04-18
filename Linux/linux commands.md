@@ -11,6 +11,7 @@
 - [Basic Commands](#basic-commands)
 - [Introduction To Linux](#introduction-to-linux)
       - [Command-Line Structure](#command-line-structure)
+- [Man Page Categories](Man-Page-Categories)
 
 
 
@@ -73,3 +74,5 @@ filename2 : Filename of the file where you wanna copy. [Argument]
 ```
 #cp -r ./fileHejJv3 ./test
 ```
+
+### Man Page Categories
