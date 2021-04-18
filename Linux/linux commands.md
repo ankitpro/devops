@@ -20,8 +20,7 @@
       * [Managing the Filesystem](#managing-the-filesystem)
       * [Managing Directories](#Managing-Directories)
       * [Managing Files](#managing-files)
-      * [Wildcards]
-      * []
+      * [Wildcards](#wildcards)
 
 
 
