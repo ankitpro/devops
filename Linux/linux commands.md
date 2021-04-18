@@ -16,6 +16,7 @@
 5. [The Filesystem](#the-filesystem)
       * [Understanding the Filesystem](#understanding-the-filesystem)
       * [Learning the Most Used Directories](#learning-the-most-used-directories)
+6. [Navigating the Filesystem]()
 
 
 
@@ -166,11 +167,18 @@ For example, the path /home/bob/sample.txt refers to a file named sample.txt tha
 Thousands of directories are in a typical Linux filesystem. You should not worry about learning
 about all of these directories when you first start learning Linux, but some are important
 enough to learn now:
-* /home—A user’s home directory; each user has a directory under the /home directory where she can store her files. This is one of the few places where the user should always have the right to create and manage files.
-* /root—Root user’s home directory; the system administrator account on the system is called the root user. The home directory for the root user isn’t under the /home directory; instead it is under the /root directory.
-* /bin—Executables (programs); most of the commands you execute as a regular user are placed here or in the /usr/bin directory.
-* /usr/bin—Executables (programs); most of the commands you execute as a regular user are placed here or in the /bin directory.
-* /sbin—Executables (programs) for system administrators; most of the commands you execute as a system administrator are placed here or in the /usr/sbin directory.
-* /usr/sbin—Executables (programs) for system administrators; most of the commands you execute as a system administrators are placed here or in the /sbin directory.
-* /media—Removable media (could also be /run/media); this is where you find the files for removable devices, such as CD-ROMs and USB drives.
-* /tmp—Temporary files; typically, programs store files in this directory rather than placing files in a user’s home directory.
+* **/home**—A user’s home directory; each user has a directory under the /home directory where she can store her files. This is one of the few places where the user should always have the right to create and manage files.
+* **/root**—Root user’s home directory; the system administrator account on the system is called the root user. The home directory for the root user isn’t under the /home directory; instead it is under the /root directory.
+* **/bin**—Executables (programs); most of the commands you execute as a regular user are placed here or in the /usr/bin directory.
+* **/usr/bin**—Executables (programs); most of the commands you execute as a regular user are placed here or in the /bin directory.
+* **/sbin**—Executables (programs) for system administrators; most of the commands you execute as a system administrator are placed here or in the **/usr/sbin** directory.
+* **/usr/sbin**—Executables (programs) for system administrators; most of the commands you execute as a system administrators are placed here or in the **/sbin** directory.
+* **/media**—Removable media (could also be /run/media); this is where you find the files for removable devices, such as CD-ROMs and USB drives.
+* **/tmp**—Temporary files; typically, programs store files in this directory rather than placing files in a user’s home directory.
+
+## Navigating the Filesystem
+When using the command-line environment, you often need to refer to a directory structure to access a file or subdirectory. For example, you may want to view a file in a specific directory.</br>
+When you first open a shell, you are automatically placed in your home directory. The directory you are in is referred to as your working directory or current directory. A common task is to switch the working directory to another directory, a process called change directory. </br>
+A path or pathname is how you refer to a file or directory in the directory structure. The two types of pathnames are
+* **Absolute**—A path that always starts from the root directory; for example, **/home/bob/sample.txt**
+* **Relative**—A path that starts from the current directory; for example, if you are in the **/home** directory and want to access the sample.txt file that is under the bob directory (which is under the **/home** directory), you use **bob/sample.txt.**
