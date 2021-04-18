@@ -13,6 +13,11 @@
       -- [Command-Line Structure](#command-line-structure)
 - [Man Page Categories](Man-Page-Categories)
 
+<details>
+           <summary>[Introduction To Linux](#introduction-to-linux)</summary>
+                  <p>[Command-Line Structure](#command-line-structure)</p>
+</details>
+
 
 
 - [Everyday use](#everyday-use)
