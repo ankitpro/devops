@@ -41,8 +41,8 @@ The Linux operating system comprises several different pieces:
 ## Basic Commands
 To find a file with an extension ".py" use the below command:
 ```
-# find . -name '*.py' | xargs grep some_function
-# cat hosts | xargs -I{} ssh root@{} hostname
+#find . -name '*.py' | xargs grep some_function
+#cat hosts | xargs -I{} ssh root@{} hostname
 ```
 
 ## Introduction to Linux
@@ -70,6 +70,6 @@ filename1 : Filename of the file which you wanna copy. [Argument]
 filename2 : Filename of the file where you wanna copy. [Argument]
 </br>
 
-```bash
-# cp -r ./fileHejJv3 ./test
+```
+#cp -r ./fileHejJv3 ./test
 ```
