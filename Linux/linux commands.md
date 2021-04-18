@@ -11,8 +11,8 @@
 - [Basic Commands](#basic-commands)
 - [Introduction To Linux](#introduction-to-linux) </br>
       - [Command-Line Structure](#command-line-structure)
-- [Man Page Categories](Man-Page-Categories)
-- [Info Documentation](Info-Documentation)
+      - [Man Page Categories](Man-Page-Categories)
+      - [Info Documentation](Info-Documentation)
 
 
 
@@ -146,7 +146,7 @@ The documentation found in info pages tends to be more verbose than in man pages
 This is a menu of subcategories you can jump to by placing your cursor on a menu item and pressing the Enter key. After you’re in a subcategory, type the letter u to go back up one level.
 To see additional commands, press the H or ? key.
 
-> NOTE:</br>
+> Note:</br>
 In the help section, press l to exit help and return to the info page. Use q to quit the info document and return to the command line.
 
 > Tip: </br>
