@@ -11,7 +11,6 @@
 - [Basic Commands](#basic-commands)
 - [Introduction To Linux](#introduction-to-linux) </br>
       - [Command-Line Structure](#command-line-structure)
-      - [Command-Line Structure](#command-line-structure)
 - [Man Page Categories](Man-Page-Categories)
 
 
@@ -79,3 +78,34 @@ filename2 : Filename of the file where you wanna copy. [Argument]
 ```
 
 ### Man Page Categories
+Many different types of man pages exist. For example, there are man pages for commands that regular users execute and man pages for commands that administrators execute. There are also man pages for libraries (programs used by other programs) and system configuration files.
+These different types of man pages are broken into categories,10 as shown in the man page for the man command:
+```
+#man man
+```
+```
+Output:
+MAN(1)                                           Manual pager utils                                          MAN(1)
+
+NAME
+       man - an interface to the system reference manuals
+
+SYNOPSIS
+       man [man options] [[section] page ...] ...
+       man -k [apropos options] regexp ...
+       man -K [man options] [section] term ...
+       man -f [whatis options] page ...
+       man -l [man options] file ...
+       man -w|-W [man options] page ...
+
+DESCRIPTION
+       man  is the system's manual pager.  Each page argument given to man is normally the name of a program, util-
+       ity or function.  The manual page associated with each of these arguments is then found  and  displayed.   A
+       section,  if provided, will direct man to look only in that section of the manual.  The default action is to
+       search in all of the available sections following a pre-defined order (see DEFAULTS), and to show  only  the
+       first page found, even if page exists in several sections.
+
+       The table below shows the section numbers of the manual followed by the types of pages they contain.
+
+       1   Executable programs or shell commands
+```
