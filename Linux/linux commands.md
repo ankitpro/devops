@@ -6,12 +6,12 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 
-- [About Linux](#about-linux)
-- [What is Linux?](#what-is-linux)
-- [Basic Commands](#basic-commands)
-- [Introduction To Linux](#introduction-to-linux) </br>
-      - [Command-Line Structure](#command-line-structure)</br>
-      - [Man Page Categories](Man-Page-Categories)</br>
+1. [About Linux](#about-linux)
+2. [What is Linux?](#what-is-linux)
+3. [Basic Commands](#basic-commands)
+4. [Introduction To Linux](#introduction-to-linux) </br>
+      * [Command-Line Structure](#command-line-structure)</br>
+      * [Man Page Categories](Man-Page-Categories)</br>
       - [Info Documentation](Info-Documentation)
 
 
