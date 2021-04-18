@@ -437,5 +437,58 @@ Su Mo Tu We Th Fr Sa
 30 31
 root@308a62877e19:~#
 ```
+You use the > character when you want to create a new file or overwrite the contents of an existing file. If you want to append to an existing file, use two >(>>) characters:
+```
+root@308a62877e19:~# date
+Sun Apr 18 14:31:17 +03 2021
+root@308a62877e19:~# date >> mycal
+root@308a62877e19:~# cat mycal
+    January 1994
+Su Mo Tu We Th Fr Sa
+                   1
+ 2  3  4  5  6  7  8
+ 9 10 11 12 13 14 15
+16 17 18 19 20 21 22
+23 24 25 26 27 28 29
+30 31
+Sun Apr 18 14:31:25 +03 2021
+root@308a62877e19:~#
+```
+The output of the cal and date commands in the previous examples is considered standard output because the command ran successfully. Notice that if a command fails for some reason (such as improper options or arguments), the command’s output is not redirected to a file when you use the > or >> characters:
+```
+root@308a62877e19:~# cal -5 01 1994 > mycal
+cal: invalid option -- '5'
+Usage: cal [general options] [-jy] [[month] year]
+       cal [general options] [-j] [-m month] [year]
+       ncal -C [general options] [-jy] [[month] year]
+       ncal -C [general options] [-j] [-m month] [year]
+       ncal [general options] [-bhJjpwySM] [-H yyyy-mm-dd] [-s country_code] [[month] year]
+       ncal [general options] [-bhJeoSM] [year]
+General options: [-31] [-A months] [-B months] [-d yyyy-mm]
+root@308a62877e19:~# cat mycal
+root@308a62877e19:~# 
+```
+When an error occurs, the command sends output to stderr. You can redirect this output by using the 2> characters:
+```
+root@308a62877e19:~# cal -5 01 1994 > mycal 2> error
+root@308a62877e19:~# cat error
+cal: invalid option -- '5'
+Usage: cal [general options] [-jy] [[month] year]
+       cal [general options] [-j] [-m month] [year]
+       ncal -C [general options] [-jy] [[month] year]
+       ncal -C [general options] [-j] [-m month] [year]
+       ncal [general options] [-bhJjpwySM] [-H yyyy-mm-dd] [-s country_code] [[month] year]
+       ncal [general options] [-bhJeoSM] [year]
+General options: [-31] [-A months] [-B months] [-d yyyy-mm]
+root@308a62877e19:~#
+```
+> Note: </br>
+It might seem strange that you use > to redirect stdout and 2> to redirect stderr. However, the official way you redirect stdout is by using the 1> characters. Because stdout is more commonly redirected than stderr, the BASH shell permits you to drop the 1 before the > character.
+
+Important notes regarding redirecting stderr include the following:
+* The 2> characters either create a new file or overwrite the contents of an existing file. To append stderr messages to an existing file, use 2>>.
+* To send all output, both stdout and stderr, to a single file, use the following11: cmd > file 2>&1
+* Sometimes you will want to run a command without seeing any of the error messages. To discard the output of a command, send it to the file. This file is called the “bit bucket” or “black hole” because whatever you send to the file will be discarded.
+
 
 
