@@ -303,7 +303,32 @@ root@308a62877e19:~#
 The rm command is normally used to delete files. With the -r option, it can delete
 directories and files.
 
-
+Be careful when using the rm -r command. You could accidentally delete files that you really need to keep. Consider using the -i option when executing the rm -r command because this enables you to pick which files to delete. When prompted, answer y for yes and n for no:
+```
+root@308a62877e19:~# ls
+root@308a62877e19:~# mkdir test1
+root@308a62877e19:~# mkdir test2
+root@308a62877e19:~# cd test1
+root@308a62877e19:~/test1# touch file1.txt
+root@308a62877e19:~/test1# touch file2.pdf
+root@308a62877e19:~/test1# touch file3.html
+root@308a62877e19:~/test1# ls
+file1.txt  file2.pdf  file3.html
+root@308a62877e19:~/test1# cd ..
+root@308a62877e19:~# ls
+test1  test2
+root@308a62877e19:~# rm -ri test1
+rm: descend into directory 'test1'? y
+rm: remove regular empty file 'test1/file1.txt'? y
+rm: remove regular empty file 'test1/file2.pdf'? y
+rm: remove regular empty file 'test1/file3.html'? n
+rm: remove directory 'test1'? n
+root@308a62877e19:~# ls
+test1  test2
+root@308a62877e19:~# ls test1
+file3.html
+root@308a62877e19:~#
+```
 
 
 
