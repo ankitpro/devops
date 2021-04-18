@@ -16,8 +16,8 @@
 5. [The Filesystem](#the-filesystem)
       * [Understanding the Filesystem](#understanding-the-filesystem)
       * [Learning the Most Used Directories](#learning-the-most-used-directories)
-      * [Navigating the Filesystem]()
-      * [Managing the Filesystem]()
+      * [Navigating the Filesystem](#navigating-the-filesystem)
+      * [Managing the Filesystem](#managing-the-filesystem)
 
 
 
@@ -237,6 +237,14 @@ drwxr-xr-x 2 root root 4096 Apr 18 10:23 .vim
 * **Apr 18 10:23**: Modification Time Stamp
 * **.vim**: File Name
 
-
+The details of the information provided by the ls -l command:
+* **File type**—d means this is a directory whereas - means it is a plain file. There are additional file types, but these are the primary two you should know.
+* **Permissions**—These are used to allow or disallow access to the file.
+* **Hard link count**—This is a file that is hard linked and shares the same data block space with another filename.
+* **User owner**—The user who owns the file has special access to the file. For example, only the user owner (and the root user) can change the permissions of a file.
+* **Group owner**—Group owners have special access to the file via permissions.
+* **File size**—The size of the file in bytes.
+* **Modification timestamp**—The date and time the file was last modified.
+* **Filename**—The name of the file.
 
 
