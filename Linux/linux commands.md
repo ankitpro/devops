@@ -11,8 +11,8 @@
 3. [Basic Commands](#basic-commands)
 4. [Introduction To Linux](#introduction-to-linux)
       * [Command-Line Structure](#command-line-structure)
-      * [Man Page Categories](Man-Page-Categories)
-      * [Info Documentation](Info-Documentation)
+      * [Man Page Categories](#man-page-categories)
+      * [Info Documentation](#info-documentation)
 
 
 
