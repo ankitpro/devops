@@ -58,7 +58,7 @@ depends on the command because some commands support the single-hyphen method
 whereas others support the double-hyphen method (and some support both methods).
 - **Arguments**:Arguments are used to provide additional information to the command.
 This information could be things like a filename, user name, or host name.
-</br>
+
 Command: cp -r <filename1> <filename2>
 </br>
 cp : copy [Command]
